@@ -1,0 +1,12 @@
+.text
+
+main:
+li $t0, 3      #load value 3 into register t0 
+li $t1, 4      # load value 3 into register t1
+
+move $t2, $t0   #move the stored value of t0 into t2
+move $t0, $t1   #move the stored value of t1 into t0
+move $t1, $t2   #move the stored value of t2 into t1
+
+li $v0, 10      #terminate 
+syscall
